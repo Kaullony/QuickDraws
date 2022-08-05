@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+  <title>QUICK DRAWS</title>
+
+  <!------ LINK CSS -------->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!------ FONTAWESOME -------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <!------ CONTENT BLACK SOCIAL MEDIAS -------->
+
+  <div class="social-media">
+    <div>
+      <a href="selectmod.html">
+        <i class="fas fa-angle-left"></i>
+      </a>
+    </div>
+    <section>
+      <a href="https://api.whatsapp.com/send?phone=5561998610854&" target="about_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a target="about_blank" href="https://www.instagram.com/kaull_developer/"><i class="fab fa-instagram"></i></a>
+      <a target="about_blank" href="https://github.com/kaullony"><i class="fab fa-github"></i></a>
+      <a target="about_blank" href="https://www.behance.net/KaullDev"><i class="fa-brands fa-behance"></i></a>
+
+    </section>
+    <div>
+      <a href="index.html">
+        <i class="fas fa-home"></i>
+      </a>
+    </div>
+  </div>
+
+  <!------ BOX SORTEIOS -------->
+
+  <section class="box-sorteio">
+    
+    <div class="titles">
+      <h1>Números Aleatórios</h1>
+      <p>      
+        Selecione o valor mínimo e o valor máximo para sortear um número entre eles.
+      </p>
+    </div>
+
+
+    <section class="box-random-name">
+
+      <div class="box-input-numbers">
+        
+          <input type="number" name="minimo" id="minimo">
+          <p>Até</p>
+          <input type="number" name="maximo" id="maximo">
+        
+      </div>
+
+      <button class="btn-initial btn-number" onclick="sorteioNumbers()">Sortear</button>
+
+      <section class="modal" id="modal-sorteio">
+
+        <ul class="dots-apple">
+          <li onclick="fechar()" class="dot-apple-red">
+            <i class="fas fa-times"></i>
+          </li>
+        </ul>
+
+        <div id="result"></div>
+
+        <section>
+          <figure>
+            <img style="width: 80%;" class="img-iphone" src="assets/img/macbook.png" alt="">
+          </figure>
+          <figcaption>
+            <p>
+              Apple Macbook Air 13 Chip M1 256gb De Ssd 8gb <br> Prata
+            </p>
+            <h5>R$ 7.399,99</h5>
+          </figcaption>
+        </section>
+
+        <div><h6  id="dateANDhours"></h6></div>
+      </section>
+      
+    </section>
+
+
+  </section>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>
